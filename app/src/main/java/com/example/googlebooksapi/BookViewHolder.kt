@@ -1,9 +1,9 @@
 package com.example.googlebooksapi
 
 import androidx.recyclerview.widget.RecyclerView
-import com.example.googlebooksapi.databinding.ListItemLayoutBinding
+import com.example.googlebooksapi.databinding.ListItemBinding
 
-class BookViewHolder(val binding: ListItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+class BookViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentBook: Book
 
     fun bindBook(book: Book) {

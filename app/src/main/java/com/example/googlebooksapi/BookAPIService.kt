@@ -6,7 +6,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 
 private const val QUERY_STRING =
-    "volumes?q=android=inTitle&maxResults=5"
+    "volumes?q=android&maxResults=5"
 
 private const val BASE_URL = "https://www.googleapis.com/books/v1/"
 
