@@ -11,11 +11,11 @@ class BookViewModel : ViewModel() {
         val request = BookAPI.bookApi.getBooks()
         request.enqueue(object: Callback<String> {
             override fun onFailure(call: Call<String>, t: Throwable) {
-               /* Log.d("RESPONSE", "Failure: " + t.message)*/
+                Log.d("RESPONSE", "Failure: " + t.message)
             }
 
             override fun onResponse(call: Call<String>, response: Response<String>) {
-                /*Log.d("RESPONSE", response.body().toString())*/
+                Log.d("RESPONSE", response.body().toString())
             }
         })
     }

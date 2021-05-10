@@ -20,12 +20,9 @@ class MainFragment : Fragment() {
 
    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
        _binding = FragmentMainBinding.inflate(inflater, container, false)
-
        val mAdapter = BookAdapter(books)
        binding.recyclerView.adapter = mAdapter
-
        viewModel.getBooks()
-
        return binding.root
     }
 

@@ -8,7 +8,7 @@ import retrofit2.http.GET
 private const val QUERY_STRING =
     "volumes?q=android=inTitle&maxResults=5"
 
-private const val BASE_URL = "https://www.googleapis.com/books/v1"
+private const val BASE_URL = "https://www.googleapis.com/books/v1/"
 
 private val retrofit = Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(
     ScalarsConverterFactory.create()).build()
